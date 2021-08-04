@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RAM.srcs/sources_1/imports/sources_1/new/Mul.vhd" \
+"../../../../RAM.srcs/sources_1/imports/sources_1/imports/new/RegAdder.vhd" \
+"../../../../RAM.srcs/sources_1/imports/sources_1/imports/Downloads/Registro.vhd" \
+"../../../../RAM.srcs/sources_1/new/Usa_RAM.vhd" \
+"../../../../RAM.srcs/sim_1/new/Test_MyRAM.vhd" \
+
+# Do not sort compile order
+nosort

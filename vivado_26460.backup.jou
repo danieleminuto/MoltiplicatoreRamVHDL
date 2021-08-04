@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Dec 17 11:53:44 2020
+# Process ID: 26460
+# Current directory: C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24376 C:\Users\Daniele\Desktop\università\elettronica digitale\progetto III\RAM\RAM.xpr
+# Log file: C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/vivado.log
+# Journal file: C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source Test_MyRAM.tcl
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+close_sim
+launch_simulation
+source Test_MyRAM.tcl
+run 4000 ns
+run 4000 ns
+run 4000 ns
+close_sim
+launch_simulation
+source Test_MyRAM.tcl
+run 4000 ns
+run 4000 ns
+run 4000 ns
+run 4000 ns
+close_sim
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

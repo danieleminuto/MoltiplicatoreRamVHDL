@@ -1,0 +1,282 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Dec 17 11:53:44 2020
+# Process ID: 26460
+# Current directory: C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24376 C:\Users\Daniele\Desktop\università\elettronica digitale\progetto III\RAM\RAM.xpr
+# Log file: C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/vivado.log
+# Journal file: C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Daniele/Downloads/RAM' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 820.293 ; gain = 114.270
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_MyRAM' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Test_MyRAM_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj Test_MyRAM_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.srcs/sources_1/imports/sources_1/new/Mul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mul
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.srcs/sources_1/imports/sources_1/imports/new/RegAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.srcs/sources_1/imports/sources_1/imports/Downloads/Registro.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registro
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.srcs/sources_1/new/Usa_RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Usa_RAM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.srcs/sim_1/new/Test_MyRAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_MyRAM
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 8eac986395a34a809fde28f78e9f5305 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Test_MyRAM_behav xil_defaultlib.Test_MyRAM xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.Registro [\Registro(nb=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.RegAdder [regadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mul [mul_default]
+Compiling architecture behavioral of entity xil_defaultlib.Usa_RAM [usa_ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_myram
+Built simulation snapshot Test_MyRAM_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_MyRAM_behav -key {Behavioral:sim_1:Functional:Test_MyRAM} -tclbatch {Test_MyRAM.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source Test_MyRAM.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module Test_MyRAM.CUT.MEM.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_MyRAM_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 835.859 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+run 2000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_MyRAM' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Test_MyRAM_vlog.prj"
+"xvhdl --incr --relax -prj Test_MyRAM_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.srcs/sim_1/new/Test_MyRAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_MyRAM
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 8eac986395a34a809fde28f78e9f5305 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Test_MyRAM_behav xil_defaultlib.Test_MyRAM xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.Registro [\Registro(nb=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.RegAdder [regadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mul [mul_default]
+Compiling architecture behavioral of entity xil_defaultlib.Usa_RAM [usa_ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_myram
+Built simulation snapshot Test_MyRAM_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_MyRAM_behav -key {Behavioral:sim_1:Functional:Test_MyRAM} -tclbatch {Test_MyRAM.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source Test_MyRAM.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module Test_MyRAM.CUT.MEM.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_MyRAM_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 871.984 ; gain = 7.223
+run 4000 ns
+run 4000 ns
+run 4000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_MyRAM' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Test_MyRAM_vlog.prj"
+"xvhdl --incr --relax -prj Test_MyRAM_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.srcs/sim_1/new/Test_MyRAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_MyRAM
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 8eac986395a34a809fde28f78e9f5305 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Test_MyRAM_behav xil_defaultlib.Test_MyRAM xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture behavioral of entity xil_defaultlib.Registro [\Registro(nb=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.RegAdder [regadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mul [mul_default]
+Compiling architecture behavioral of entity xil_defaultlib.Usa_RAM [usa_ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_myram
+Built simulation snapshot Test_MyRAM_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_MyRAM_behav -key {Behavioral:sim_1:Functional:Test_MyRAM} -tclbatch {Test_MyRAM.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source Test_MyRAM.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module Test_MyRAM.CUT.MEM.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_MyRAM_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 881.660 ; gain = 5.461
+run 4000 ns
+run 4000 ns
+run 4000 ns
+run 4000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs synth_1 -jobs 4
+[Thu Dec 17 12:07:22 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Daniele/Desktop/università/elettronica digitale/progetto III/RAM/RAM.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 17 12:08:28 2020...
